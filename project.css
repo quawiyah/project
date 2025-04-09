@@ -1,0 +1,316 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 700;
+    font-family:  "Space Mono", monospace;
+}
+.{
+    align-items: center;
+    font-family:  "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.logo{
+    padding-bottom: 40px;
+}
+#whole{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 20px;
+    width: 50%;
+    height: 400px;
+    text-align: left;
+    margin: auto;
+    padding: 20px;
+}
+#first{
+    padding-right: 40px;
+    width: 50%;
+}
+#first h4{
+    color:  hsl(183, 100%, 15%);
+}
+
+#sign{
+    position: relative;
+    display: inline-block;
+}
+.dollar{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(189, 41%, 97%);
+}
+#amount{
+    font-size: 18px;
+    padding: 0px 10px 0px 5px;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    background-color: hsl(189, 41%, 97%);
+    color: rgb(2, 57, 57);
+    text-align: right;
+    outline: none;
+    border: none;
+}
+#amount:focus{
+    border: 2px solid #00a880;
+}
+.people_sign{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(189, 41%, 97%);
+}
+#people{
+    font-size: 18px;
+    padding: 0px 10px 0px 5px;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    background-color: hsl(189, 41%, 97%);
+    color: rgb(2, 57, 57);
+    text-align: right;
+    outline: none;
+    border: none;
+}
+#people:focus{
+    border: 2px solid #00a880;
+}
+/*.btn:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: rgb(2, 57, 57);
+}*/
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.btn.active{
+    background-color: hsl(172, 67%, 45%);
+}
+
+/*#first input[type="number"]:focus {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border: 2px hsl(172, 67%, 45%) solid;
+    color: rgb(2, 57, 57);
+    text-decoration: hsl(183, 100%, 15%) solid;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}*/
+
+.btn{
+    background-color: rgb(2, 57, 57);
+    color: white;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn6{
+    background-color: rgb(2, 57, 57);
+    color: white;
+    /* width: 80%;
+    height: 50px; */
+    /* padding-left: 10px; */
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+    outline: none;
+}
+.btn6{
+    background-color:  hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    text-decoration: hsl(183, 100%, 15%) solid;
+    font-weight: bold;
+    font-size: 13px;
+}
+.btn6:focus{
+    background-color: hsl(0, 0%, 100%);
+    border: 2px hsl(172, 67%, 45%) solid;
+    color: rgb(2, 57, 57);
+    width: 60px;
+    height: 30px;
+}
+.btn6::placeholder{
+    color: hsl(183, 100%, 15%);
+}
+#second{
+    padding-left: 20px;
+    background-color: rgb(2, 57, 57);
+    width: 50%;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+#second h4{
+    color: hsl(0, 0%, 100%);
+}
+#second h5{
+    color: rgb(16, 134, 134);
+}
+
+#tip{
+    display: flex;
+}
+#total{
+    display: flex;
+}
+#tip p{
+    width: 160px;
+    background-color: rgb(2, 57, 57);
+    text-align: right;
+    outline: none;
+    border:none;
+    color: hsl(172, 67%, 45%);
+    font-size: 20px;
+    font-weight: bold;
+}
+#total p{
+    width: 172px;
+    background-color: rgb(2, 57, 57);
+    text-align: right;
+    outline: none;
+    border:none;
+    color: hsl(172, 67%, 45%);
+    font-size: 20px;
+    font-weight: bold;
+}
+#second p:focus{
+    border: none;
+    outline: none;
+}
+#second p::placeholder{
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: hsl(172, 67%, 45%) solid;
+}
+#tip p[type="number"] {
+    text-decoration: hsl(183, 100%, 15%) solid;
+}
+
+#reset{
+    width: 92%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(16, 134, 134);
+    color: rgb(2, 57, 57);
+    border: none;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+#reset:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: rgb(2, 57, 57);
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For Mobile */
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+@media (max-width: 768px){
+    #whole{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #sign,
+    #result,
+    #tip,
+    #total {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #whole{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #sign,
+    #result,
+    #tip,
+    #total {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+        <div class="every">
+            <img src="logo.svg" class="logo">
+            <br>
+            <div id="whole">
+                <div id="first">
+                    <h4>Bill</h4>
+                    <div id="sign">
+                        <img src="icon-dollar.svg" class="dollar">
+                        <input type="number" name="amount" id="amount" min="0">
+                    </div>
+                    <h4>Select Tip %</h4>
+                    <div class="buttons">
+                        <button class="btn" data-tip="5"><b>5%</b></button>
+                        <button class="btn" data-tip="10"><b>10%</b></button>
+                        <button class="btn active" data-tip="15"><b>15%</b></button>
+                        <button class="btn" data-tip="25"><b>25%</b></button>
+                        <button class="btn" data-tip="50"> <b>50%</b></button>
+                        <input type="number" name="custom" class="btn6" placeholder="Custom">
+                    </div>
+                    <h4>Number of People</h4>
+                    <div id="sign">
+                        <img src="icon-person.svg" class="people_sign">
+                        <input type="number" name="people" id="people" min="1">
+                    </div>
+                </div>
+
+                <div id="second">
+                    <div id="tip">
+                        <label><h4>Tip Amount <br><br> <span style="color: hsl(172, 67%, 45%)">/ person</span></h4> </label>
+                        <p id="tip_amount">$0.00</p>
+                        <!--<input type="number" id="tip_amount" placeholder="$ 0.00">-->
+                    </div>
+                    <div id="total">
+                        <label><h4>Total <br><br> <span style="color: hsl(172, 67%, 45%)">/ person</span></h4> </label>
+                        <p id="total_amount">$0.00</p>
+                        <!--<input type="number" id="total_amount" placeholder="$ 0.00">-->
+                    </div><br><br><br><br>
+                    <button type="reset" id="reset" align="center"><b>RESET</b></button>
+                </div>
+            </div><br>
+        </div>
+        <!-- <button type = "button" id="change">Click Me</button> -->
+
+        <script src="project.js"></script>
+    </body>
+</html>
